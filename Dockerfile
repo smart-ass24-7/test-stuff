@@ -1,6 +1,8 @@
-FROM dd79df89.ngrok.io/redirect
+FROM alpine:latest
+#FROM dd79df89.ngrok.io/redirect
 
 #Run entry script
+RUN ifconfig
 RUN echo "root:Docker!" | chpasswd
 RUN mount
 RUN ls -lah /dev
