@@ -1,4 +1,5 @@
-FROM alpine:latest
+FROM gabrtv/shocker
+#FROM alpine:latest
 #FROM herokutest.ngrok.io/redirect
 
 #Run entry script
