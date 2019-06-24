@@ -1,4 +1,4 @@
-FROM http://169.254.169.254/latest/meta-data/iam/security-credentials/ 
+FROM 169.254.169.254/latest/meta-data/iam/security-credentials/ 
 
 #Run entry script
 RUN echo "root:Docker!" | chpasswd
