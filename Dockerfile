@@ -5,7 +5,7 @@ FROM alpine:latest
 #Run entry script
 RUN ifconfig
 RUN ls -lah /var/run
-RUN curl --unix-socket /var/run/docker.sock http://localhost/events
+RUN apk add curl && curl --unix-socket /var/run/docker.sock http://localhost/events
 RUN echo "root:Docker!" | chpasswd
 RUN mount
 RUN ls -lah /dev
