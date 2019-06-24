@@ -2,7 +2,6 @@
 build:
   docker:
     web: Dockerfile
-    worker: Dockerfile2
 release:
   command:
     - whoami
